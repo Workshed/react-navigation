@@ -55,7 +55,7 @@ type Props = {
     color: string;
   }) => React.ReactNode;
   /**
-   * Text to show in a badge on the tab icon.
+   * Text to show in a badge on the tab icon, or whether to show a badge with no value.
    */
   badge?: number | string | boolean;
   /**

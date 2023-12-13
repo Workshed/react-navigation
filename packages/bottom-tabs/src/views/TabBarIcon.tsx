@@ -13,7 +13,7 @@ import { Badge } from './Badge';
 type Props = {
   route: Route<string>;
   horizontal: boolean;
-  badge?: string | number;
+  badge?: string | number | boolean;
   badgeStyle?: StyleProp<TextStyle>;
   activeOpacity: number;
   inactiveOpacity: number;
@@ -62,7 +62,7 @@ export function TabBarIcon({
         })}
       </View>
       <Badge
-        visible={badge != null}
+        visible={badge != null && badge !== false}
         style={[styles.badge, badgeStyle]}
         size={ICON_SIZE * 0.75}
       >

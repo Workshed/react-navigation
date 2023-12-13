@@ -16,7 +16,7 @@ type Props = {
   /**
    * Content of the `Badge`.
    */
-  children?: string | number;
+  children?: string | number | boolean;
   /**
    * Size of the `Badge`.
    */
